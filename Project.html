@@ -1,0 +1,241 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <meta name="description" content="A clean, responsive portfolio built with HTML, CSS and JavaScript." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <span>MyPortfolio</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="right-ctls">
+        <button class="theme-toggle" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="menu-toggle" id="menuBtn" aria-label="Menu" title="Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div class="menu" id="menu" hidden>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>  <main class="container">
+    <!-- HERO -->
+    <section class="hero reveal" id="home">
+      <div class="intro">
+        <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
+          <div class="avatar" aria-hidden="true">MP</div>
+          <div class="chip" aria-label="Role">Front‑End Developer</div>
+        </div>
+        <h1 class="title">Hello, I build accessible, fast and beautiful web experiences.</h1>
+        <p class="subtitle">I’m a developer who loves delightful UX, clean code, and shipping quickly. Below is a selection of my work and the stack I use most.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#projects">View Projects
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a class="btn outline" href="#contact">Contact Me</a>
+          <a class="btn outline" href="resume.pdf" download>Download Résumé</a>
+        </div>
+      </div>
+    </section><!-- ABOUT -->
+<section id="about" class="reveal">
+  <div class="section-head">
+    <div>
+      <h2 class="section-title">About</h2>
+      <p class="section-desc">A quick snapshot of who I am and how I work.</p>
+    </div>
+  </div>
+  <div class="about">
+    <article class="card">
+      <h3>Hi, I’m <span style="color: var(--primary-2);">Ankit Gupta </span> 👋</h3>
+      <p>I craft user‑centric interfaces with performance top of mind. I enjoy working across the stack but my happy place is turning designs into accessible, maintainable components.</p>
+      <ul>
+        <li>⚡ Focus: React, TypeScript, CSS architecture, accessibility</li>
+        <li>🛠 Tooling: Vite, PNPM, Playwright, Vitest</li>
+        <li>🤝 Values: empathy, clarity, iteration</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="reveal">
+  <div class="section-head">
+    <div>
+      <h2 class="section-title">Skills</h2>
+      <p class="section-desc">A few of the technologies I use regularly.</p>
+    </div>
+  </div>
+  <div class="skills" role="list">
+    <div class="skill" role="listitem">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+        <b>HTML</b><span class="chip">Advanced</span>
+      </div>
+      <div class="bar" aria-hidden="true"><span data-fill="92"></span></div>
+    </div>
+    <div class="skill" role="listitem">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+        <b>CSS</b><span class="chip">Advanced</span>
+      </div>
+      <div class="bar"><span data-fill="90"></span></div>
+    </div>
+    <div class="skill" role="listitem">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+        <b>JavaScript</b><span class="chip">Advanced</span>
+      </div>
+      <div class="bar"><span data-fill="88"></span></div>
+    </div>
+    <div class="skill" role="listitem">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+        <b>Accessibility</b><span class="chip">Pro</span>
+      </div>
+      <div class="bar"><span data-fill="82"></span></div>
+    </div>
+    <div class="skill" role="listitem">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+        <b>React</b><span class="chip">Advanced</span>
+      </div>
+      <div class="bar"><span data-fill="85"></span></div>
+    </div>
+    <div class="skill" role="listitem">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+        <b>Node.js</b><span class="chip">Intermediate</span>
+      </div>
+      <div class="bar"><span data-fill="70"></span></div>
+    </div>
+    <div class="skill" role="listitem">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+        <b>TypeScript</b><span class="chip">Intermediate</span>
+      </div>
+      <div class="bar"><span data-fill="76"></span></div>
+    </div>
+    <div class="skill" role="listitem">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+        <b>Testing</b><span class="chip">Intermediate</span>
+      </div>
+      <div class="bar"><span data-fill="65"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="reveal">
+  <div class="section-head">
+    <div>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-desc">Some recent work. Click to learn more.</p>
+    </div>
+    <div style="display:flex; gap: 8px; align-items:center;">
+      <label for="filter">Filter</label>
+      <select id="filter" style="background: var(--surface-2); color: var(--text); border:1px solid rgba(255,255,255,.1); padding: 8px 10px; border-radius: 10px;">
+        <option value="all">All</option>
+        <option value="web">Web Apps</option>
+        <option value="design">Design Systems</option>
+        <option value="tools">Tools</option>
+      </select>
+    </div>
+  </div>
+  <div class="projects" id="projectGrid">
+    <!-- Project Card Template -->
+    <article class="card project" data-tags="web">
+      <div class="thumb"></div>
+      <h3>TaskFlow – Kanban Board</h3>
+      <p>Drag‑and‑drop tasks with local storage & keyboard a11y.</p>
+      <div>
+        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+      </div>
+      <a class="btn outline" href="#" aria-label="Open TaskFlow project">Preview</a>
+    </article>
+    <article class="card project" data-tags="design">
+      <div class="thumb"></div>
+      <h3>Orbit UI – Component Library</h3>
+      <p>Token‑driven, themable design system starter.</p>
+      <div>
+        <span class="tag">Design System</span><span class="tag">Docs</span>
+      </div>
+      <a class="btn outline" href="#" aria-label="Open Orbit UI project">Preview</a>
+    </article>
+    <article class="card project" data-tags="tools">
+      <div class="thumb"></div>
+      <h3>PicTiny – Image Optimizer</h3>
+      <p>Bulk compress images in the browser using Web Workers.</p>
+      <div>
+        <span class="tag">Workers</span><span class="tag">WASM</span>
+      </div>
+      <a class="btn outline" href="#" aria-label="Open PicTiny project">Preview</a>
+    </article>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="reveal">
+  <div class="section-head">
+    <div>
+      <h2 class="section-title">Contact</h2>
+      <p class="section-desc">Have a question or want to work together? Drop a line.</p>
+    </div>
+  </div>
+  <div class="contact-grid">
+    <form id="contactForm" class="card" novalidate>
+      <div class="grid-2">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="jane@example.com" required />
+        </div>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Hello! I'd love to chat about…" required></textarea>
+      </div>
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:10px;">
+        <p class="form-note" id="formNote">I typically reply within 1–2 business days.</p>
+        <button class="btn" type="submit">Send Message</button>
+      </div>
+    </form>
+    <aside class="card">
+      <h3>Elsewhere</h3>
+      <p>Find me on these platforms:</p>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="btn outline" href="#" aria-label="GitHub Profile">GitHub</a>
+        <a class="btn outline" href="#" aria-label="LinkedIn Profile">LinkedIn</a>
+        <a class="btn outline" href="#" aria-label="Twitter Profile">Twitter</a>
+        <a class="btn outline" href="#" aria-label="Email Me">Email</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot">
+    <span>© <span id="year"></span> Ankit Gupta</span>
+    <span>Built with <strong>HTML</strong>, <strong>CSS</strong> & <strong>JavaScript</strong></span>
+  </div>
+</footer>
+ </main> 
+ <script src="project.js"></script>
+</body>
+</html>
